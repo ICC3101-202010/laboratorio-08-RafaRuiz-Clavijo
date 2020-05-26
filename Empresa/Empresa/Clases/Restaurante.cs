@@ -10,7 +10,7 @@ namespace Empresa.Clases
     {
         private bool mesas_exclusivas;
 
-        public Restaurante(bool mesas_exclusivas, string boss_name, int id, string hora_inicio, string hora_cierre) : base(boss_name,
+        public Restaurante(bool mesas_exclusivas, string boss_name, int id, string hora_inicio, string hora_cierre, string nombre) : base(nombre, boss_name,
             id, hora_inicio, hora_cierre)
         {
             this.mesas_exclusivas = mesas_exclusivas;

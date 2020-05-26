@@ -10,7 +10,7 @@ namespace Empresa.Clases
     {
         private List<string> categorias;
 
-        public Tienda(List<string> categorias, string boss_name, int id, string hora_inicio, string hora_cierre) : base (boss_name,
+        public Tienda(List<string> categorias, string boss_name, int id, string hora_inicio, string hora_cierre, string nombre) : base (nombre, boss_name,
             id, hora_inicio, hora_cierre)
         {
             this.Categorias = categorias;
