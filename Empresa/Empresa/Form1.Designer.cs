@@ -45,6 +45,36 @@
             this.panel_ver_info_locales = new System.Windows.Forms.Panel();
             this.panel_tienda = new System.Windows.Forms.Panel();
             this.panel_cine = new System.Windows.Forms.Panel();
+            this.panel_agregar_Restaurante = new System.Windows.Forms.Panel();
+            this.panel_agregar_recreativa = new System.Windows.Forms.Panel();
+            this.button_agregar_recreativa = new System.Windows.Forms.Button();
+            this.textBox_hora_final_recreativa = new System.Windows.Forms.TextBox();
+            this.textBox_hora_inicio_recreativa = new System.Windows.Forms.TextBox();
+            this.textBox_id_recreativa = new System.Windows.Forms.TextBox();
+            this.textBox_boss_recreativa = new System.Windows.Forms.TextBox();
+            this.label_hora_final_recreativa = new System.Windows.Forms.Label();
+            this.label_hora_inicio_recreativa = new System.Windows.Forms.Label();
+            this.label_id_recreativa = new System.Windows.Forms.Label();
+            this.label_boss_recreativa = new System.Windows.Forms.Label();
+            this.button_atras_recreativa = new System.Windows.Forms.Button();
+            this.textBox_nombre_recreativa = new System.Windows.Forms.TextBox();
+            this.label_nombre_recreativa = new System.Windows.Forms.Label();
+            this.label_titulo_recreativa = new System.Windows.Forms.Label();
+            this.button_add_restaurante = new System.Windows.Forms.Button();
+            this.checkBox_mesas_privadas_restaurante = new System.Windows.Forms.CheckBox();
+            this.textBox_hora_final_restaurante = new System.Windows.Forms.TextBox();
+            this.textBox_hora_inicio_restaurante = new System.Windows.Forms.TextBox();
+            this.textBox_id_restaurante = new System.Windows.Forms.TextBox();
+            this.textBox_boss_restaurante = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label_hora_final_restaurante = new System.Windows.Forms.Label();
+            this.label_hora_inicio_restaurante = new System.Windows.Forms.Label();
+            this.label_id_restaurante = new System.Windows.Forms.Label();
+            this.label_boss_restaurante = new System.Windows.Forms.Label();
+            this.button_atras_restaurante = new System.Windows.Forms.Button();
+            this.textBox_nombre_restaurante = new System.Windows.Forms.TextBox();
+            this.label_nombre_restaurant = new System.Windows.Forms.Label();
+            this.label_registrar_restaurant = new System.Windows.Forms.Label();
             this.textBox_salas_cine = new System.Windows.Forms.TextBox();
             this.textBox_hora_final_cine = new System.Windows.Forms.TextBox();
             this.textBox_hora_inicio_cine = new System.Windows.Forms.TextBox();
@@ -79,36 +109,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel_info_local = new System.Windows.Forms.Panel();
             this.label_info_general_local = new System.Windows.Forms.Label();
-            this.panel_agregar_Restaurante = new System.Windows.Forms.Panel();
-            this.label_registrar_restaurant = new System.Windows.Forms.Label();
-            this.label_nombre_restaurant = new System.Windows.Forms.Label();
-            this.textBox_nombre_restaurante = new System.Windows.Forms.TextBox();
-            this.button_atras_restaurante = new System.Windows.Forms.Button();
-            this.label_boss_restaurante = new System.Windows.Forms.Label();
-            this.label_id_restaurante = new System.Windows.Forms.Label();
-            this.label_hora_inicio_restaurante = new System.Windows.Forms.Label();
-            this.label_hora_final_restaurante = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox_boss_restaurante = new System.Windows.Forms.TextBox();
-            this.textBox_id_restaurante = new System.Windows.Forms.TextBox();
-            this.textBox_hora_inicio_restaurante = new System.Windows.Forms.TextBox();
-            this.textBox_hora_final_restaurante = new System.Windows.Forms.TextBox();
-            this.checkBox_mesas_privadas_restaurante = new System.Windows.Forms.CheckBox();
-            this.button_add_restaurante = new System.Windows.Forms.Button();
-            this.panel_agregar_recreativa = new System.Windows.Forms.Panel();
-            this.label_titulo_recreativa = new System.Windows.Forms.Label();
-            this.label_nombre_recreativa = new System.Windows.Forms.Label();
-            this.textBox_nombre_recreativa = new System.Windows.Forms.TextBox();
-            this.button_atras_recreativa = new System.Windows.Forms.Button();
-            this.label_boss_recreativa = new System.Windows.Forms.Label();
-            this.label_id_recreativa = new System.Windows.Forms.Label();
-            this.label_hora_inicio_recreativa = new System.Windows.Forms.Label();
-            this.label_hora_final_recreativa = new System.Windows.Forms.Label();
-            this.textBox_boss_recreativa = new System.Windows.Forms.TextBox();
-            this.textBox_id_recreativa = new System.Windows.Forms.TextBox();
-            this.textBox_hora_inicio_recreativa = new System.Windows.Forms.TextBox();
-            this.textBox_hora_final_recreativa = new System.Windows.Forms.TextBox();
-            this.button_agregar_recreativa = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_tienda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_restaurante)).BeginInit();
@@ -199,7 +199,6 @@
             this.label_recreativa.Size = new System.Drawing.Size(89, 20);
             this.label_recreativa.TabIndex = 6;
             this.label_recreativa.Text = "Recreativa";
-            this.label_recreativa.Click += new System.EventHandler(this.label_recreativa_Click);
             // 
             // pictureBox_tienda
             // 
@@ -328,6 +327,320 @@
             this.panel_cine.Name = "panel_cine";
             this.panel_cine.Size = new System.Drawing.Size(800, 450);
             this.panel_cine.TabIndex = 30;
+            // 
+            // panel_agregar_Restaurante
+            // 
+            this.panel_agregar_Restaurante.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_agregar_Restaurante.BackgroundImage")));
+            this.panel_agregar_Restaurante.Controls.Add(this.panel_agregar_recreativa);
+            this.panel_agregar_Restaurante.Controls.Add(this.button_add_restaurante);
+            this.panel_agregar_Restaurante.Controls.Add(this.checkBox_mesas_privadas_restaurante);
+            this.panel_agregar_Restaurante.Controls.Add(this.textBox_hora_final_restaurante);
+            this.panel_agregar_Restaurante.Controls.Add(this.textBox_hora_inicio_restaurante);
+            this.panel_agregar_Restaurante.Controls.Add(this.textBox_id_restaurante);
+            this.panel_agregar_Restaurante.Controls.Add(this.textBox_boss_restaurante);
+            this.panel_agregar_Restaurante.Controls.Add(this.label8);
+            this.panel_agregar_Restaurante.Controls.Add(this.label_hora_final_restaurante);
+            this.panel_agregar_Restaurante.Controls.Add(this.label_hora_inicio_restaurante);
+            this.panel_agregar_Restaurante.Controls.Add(this.label_id_restaurante);
+            this.panel_agregar_Restaurante.Controls.Add(this.label_boss_restaurante);
+            this.panel_agregar_Restaurante.Controls.Add(this.button_atras_restaurante);
+            this.panel_agregar_Restaurante.Controls.Add(this.textBox_nombre_restaurante);
+            this.panel_agregar_Restaurante.Controls.Add(this.label_nombre_restaurant);
+            this.panel_agregar_Restaurante.Controls.Add(this.label_registrar_restaurant);
+            this.panel_agregar_Restaurante.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_agregar_Restaurante.Location = new System.Drawing.Point(0, 0);
+            this.panel_agregar_Restaurante.Name = "panel_agregar_Restaurante";
+            this.panel_agregar_Restaurante.Size = new System.Drawing.Size(800, 450);
+            this.panel_agregar_Restaurante.TabIndex = 44;
+            // 
+            // panel_agregar_recreativa
+            // 
+            this.panel_agregar_recreativa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_agregar_recreativa.BackgroundImage")));
+            this.panel_agregar_recreativa.Controls.Add(this.button_agregar_recreativa);
+            this.panel_agregar_recreativa.Controls.Add(this.textBox_hora_final_recreativa);
+            this.panel_agregar_recreativa.Controls.Add(this.textBox_hora_inicio_recreativa);
+            this.panel_agregar_recreativa.Controls.Add(this.textBox_id_recreativa);
+            this.panel_agregar_recreativa.Controls.Add(this.textBox_boss_recreativa);
+            this.panel_agregar_recreativa.Controls.Add(this.label_hora_final_recreativa);
+            this.panel_agregar_recreativa.Controls.Add(this.label_hora_inicio_recreativa);
+            this.panel_agregar_recreativa.Controls.Add(this.label_id_recreativa);
+            this.panel_agregar_recreativa.Controls.Add(this.label_boss_recreativa);
+            this.panel_agregar_recreativa.Controls.Add(this.button_atras_recreativa);
+            this.panel_agregar_recreativa.Controls.Add(this.textBox_nombre_recreativa);
+            this.panel_agregar_recreativa.Controls.Add(this.label_nombre_recreativa);
+            this.panel_agregar_recreativa.Controls.Add(this.label_titulo_recreativa);
+            this.panel_agregar_recreativa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_agregar_recreativa.Location = new System.Drawing.Point(0, 0);
+            this.panel_agregar_recreativa.Name = "panel_agregar_recreativa";
+            this.panel_agregar_recreativa.Size = new System.Drawing.Size(800, 450);
+            this.panel_agregar_recreativa.TabIndex = 52;
+            // 
+            // button_agregar_recreativa
+            // 
+            this.button_agregar_recreativa.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_agregar_recreativa.Location = new System.Drawing.Point(416, 372);
+            this.button_agregar_recreativa.Name = "button_agregar_recreativa";
+            this.button_agregar_recreativa.Size = new System.Drawing.Size(152, 42);
+            this.button_agregar_recreativa.TabIndex = 50;
+            this.button_agregar_recreativa.Text = "Agregar";
+            this.button_agregar_recreativa.UseVisualStyleBackColor = true;
+            this.button_agregar_recreativa.Click += new System.EventHandler(this.button_agregar_recreativa_Click);
+            // 
+            // textBox_hora_final_recreativa
+            // 
+            this.textBox_hora_final_recreativa.Location = new System.Drawing.Point(228, 287);
+            this.textBox_hora_final_recreativa.Name = "textBox_hora_final_recreativa";
+            this.textBox_hora_final_recreativa.Size = new System.Drawing.Size(387, 22);
+            this.textBox_hora_final_recreativa.TabIndex = 49;
+            // 
+            // textBox_hora_inicio_recreativa
+            // 
+            this.textBox_hora_inicio_recreativa.Location = new System.Drawing.Point(228, 238);
+            this.textBox_hora_inicio_recreativa.Name = "textBox_hora_inicio_recreativa";
+            this.textBox_hora_inicio_recreativa.Size = new System.Drawing.Size(387, 22);
+            this.textBox_hora_inicio_recreativa.TabIndex = 48;
+            // 
+            // textBox_id_recreativa
+            // 
+            this.textBox_id_recreativa.Location = new System.Drawing.Point(228, 189);
+            this.textBox_id_recreativa.Name = "textBox_id_recreativa";
+            this.textBox_id_recreativa.Size = new System.Drawing.Size(387, 22);
+            this.textBox_id_recreativa.TabIndex = 47;
+            // 
+            // textBox_boss_recreativa
+            // 
+            this.textBox_boss_recreativa.Location = new System.Drawing.Point(228, 144);
+            this.textBox_boss_recreativa.Name = "textBox_boss_recreativa";
+            this.textBox_boss_recreativa.Size = new System.Drawing.Size(387, 22);
+            this.textBox_boss_recreativa.TabIndex = 46;
+            // 
+            // label_hora_final_recreativa
+            // 
+            this.label_hora_final_recreativa.AutoSize = true;
+            this.label_hora_final_recreativa.BackColor = System.Drawing.Color.Gold;
+            this.label_hora_final_recreativa.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_hora_final_recreativa.Location = new System.Drawing.Point(70, 290);
+            this.label_hora_final_recreativa.Name = "label_hora_final_recreativa";
+            this.label_hora_final_recreativa.Size = new System.Drawing.Size(108, 22);
+            this.label_hora_final_recreativa.TabIndex = 45;
+            this.label_hora_final_recreativa.Text = "Hora Final:";
+            // 
+            // label_hora_inicio_recreativa
+            // 
+            this.label_hora_inicio_recreativa.AutoSize = true;
+            this.label_hora_inicio_recreativa.BackColor = System.Drawing.Color.Gold;
+            this.label_hora_inicio_recreativa.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_hora_inicio_recreativa.Location = new System.Drawing.Point(64, 241);
+            this.label_hora_inicio_recreativa.Name = "label_hora_inicio_recreativa";
+            this.label_hora_inicio_recreativa.Size = new System.Drawing.Size(114, 22);
+            this.label_hora_inicio_recreativa.TabIndex = 44;
+            this.label_hora_inicio_recreativa.Text = "Hora Inicio:";
+            // 
+            // label_id_recreativa
+            // 
+            this.label_id_recreativa.AutoSize = true;
+            this.label_id_recreativa.BackColor = System.Drawing.Color.Gold;
+            this.label_id_recreativa.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_id_recreativa.Location = new System.Drawing.Point(144, 188);
+            this.label_id_recreativa.Name = "label_id_recreativa";
+            this.label_id_recreativa.Size = new System.Drawing.Size(34, 22);
+            this.label_id_recreativa.TabIndex = 43;
+            this.label_id_recreativa.Text = "Id:";
+            // 
+            // label_boss_recreativa
+            // 
+            this.label_boss_recreativa.AutoSize = true;
+            this.label_boss_recreativa.BackColor = System.Drawing.Color.Gold;
+            this.label_boss_recreativa.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_boss_recreativa.Location = new System.Drawing.Point(104, 144);
+            this.label_boss_recreativa.Name = "label_boss_recreativa";
+            this.label_boss_recreativa.Size = new System.Drawing.Size(74, 22);
+            this.label_boss_recreativa.TabIndex = 42;
+            this.label_boss_recreativa.Text = "Dueño:";
+            // 
+            // button_atras_recreativa
+            // 
+            this.button_atras_recreativa.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_atras_recreativa.Location = new System.Drawing.Point(187, 372);
+            this.button_atras_recreativa.Name = "button_atras_recreativa";
+            this.button_atras_recreativa.Size = new System.Drawing.Size(152, 42);
+            this.button_atras_recreativa.TabIndex = 41;
+            this.button_atras_recreativa.Text = "Atras";
+            this.button_atras_recreativa.UseVisualStyleBackColor = true;
+            // 
+            // textBox_nombre_recreativa
+            // 
+            this.textBox_nombre_recreativa.Location = new System.Drawing.Point(228, 100);
+            this.textBox_nombre_recreativa.Name = "textBox_nombre_recreativa";
+            this.textBox_nombre_recreativa.Size = new System.Drawing.Size(387, 22);
+            this.textBox_nombre_recreativa.TabIndex = 40;
+            // 
+            // label_nombre_recreativa
+            // 
+            this.label_nombre_recreativa.AutoSize = true;
+            this.label_nombre_recreativa.BackColor = System.Drawing.Color.Gold;
+            this.label_nombre_recreativa.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_nombre_recreativa.Location = new System.Drawing.Point(89, 99);
+            this.label_nombre_recreativa.Name = "label_nombre_recreativa";
+            this.label_nombre_recreativa.Size = new System.Drawing.Size(89, 22);
+            this.label_nombre_recreativa.TabIndex = 34;
+            this.label_nombre_recreativa.Text = "Nombre:";
+            // 
+            // label_titulo_recreativa
+            // 
+            this.label_titulo_recreativa.AutoSize = true;
+            this.label_titulo_recreativa.BackColor = System.Drawing.Color.Gold;
+            this.label_titulo_recreativa.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_titulo_recreativa.Location = new System.Drawing.Point(51, 42);
+            this.label_titulo_recreativa.Name = "label_titulo_recreativa";
+            this.label_titulo_recreativa.Size = new System.Drawing.Size(304, 28);
+            this.label_titulo_recreativa.TabIndex = 17;
+            this.label_titulo_recreativa.Text = "Registrar una recreativa:";
+            // 
+            // button_add_restaurante
+            // 
+            this.button_add_restaurante.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_add_restaurante.Location = new System.Drawing.Point(457, 372);
+            this.button_add_restaurante.Name = "button_add_restaurante";
+            this.button_add_restaurante.Size = new System.Drawing.Size(152, 42);
+            this.button_add_restaurante.TabIndex = 51;
+            this.button_add_restaurante.Text = "Agregar";
+            this.button_add_restaurante.UseVisualStyleBackColor = true;
+            this.button_add_restaurante.Click += new System.EventHandler(this.button_add_restaurante_Click);
+            // 
+            // checkBox_mesas_privadas_restaurante
+            // 
+            this.checkBox_mesas_privadas_restaurante.AutoSize = true;
+            this.checkBox_mesas_privadas_restaurante.BackColor = System.Drawing.Color.Gold;
+            this.checkBox_mesas_privadas_restaurante.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_mesas_privadas_restaurante.Location = new System.Drawing.Point(208, 301);
+            this.checkBox_mesas_privadas_restaurante.Name = "checkBox_mesas_privadas_restaurante";
+            this.checkBox_mesas_privadas_restaurante.Size = new System.Drawing.Size(546, 21);
+            this.checkBox_mesas_privadas_restaurante.TabIndex = 50;
+            this.checkBox_mesas_privadas_restaurante.Text = "Marque esta opcion si este restaurante requiere reservacion de mesas";
+            this.checkBox_mesas_privadas_restaurante.UseVisualStyleBackColor = false;
+            // 
+            // textBox_hora_final_restaurante
+            // 
+            this.textBox_hora_final_restaurante.Location = new System.Drawing.Point(208, 259);
+            this.textBox_hora_final_restaurante.Name = "textBox_hora_final_restaurante";
+            this.textBox_hora_final_restaurante.Size = new System.Drawing.Size(387, 22);
+            this.textBox_hora_final_restaurante.TabIndex = 49;
+            // 
+            // textBox_hora_inicio_restaurante
+            // 
+            this.textBox_hora_inicio_restaurante.Location = new System.Drawing.Point(208, 224);
+            this.textBox_hora_inicio_restaurante.Name = "textBox_hora_inicio_restaurante";
+            this.textBox_hora_inicio_restaurante.Size = new System.Drawing.Size(387, 22);
+            this.textBox_hora_inicio_restaurante.TabIndex = 48;
+            // 
+            // textBox_id_restaurante
+            // 
+            this.textBox_id_restaurante.Location = new System.Drawing.Point(208, 188);
+            this.textBox_id_restaurante.Name = "textBox_id_restaurante";
+            this.textBox_id_restaurante.Size = new System.Drawing.Size(387, 22);
+            this.textBox_id_restaurante.TabIndex = 47;
+            // 
+            // textBox_boss_restaurante
+            // 
+            this.textBox_boss_restaurante.Location = new System.Drawing.Point(208, 153);
+            this.textBox_boss_restaurante.Name = "textBox_boss_restaurante";
+            this.textBox_boss_restaurante.Size = new System.Drawing.Size(387, 22);
+            this.textBox_boss_restaurante.TabIndex = 46;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Gold;
+            this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(3, 301);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(175, 22);
+            this.label8.TabIndex = 45;
+            this.label8.Text = "Mesas Exclusivas:";
+            // 
+            // label_hora_final_restaurante
+            // 
+            this.label_hora_final_restaurante.AutoSize = true;
+            this.label_hora_final_restaurante.BackColor = System.Drawing.Color.Gold;
+            this.label_hora_final_restaurante.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_hora_final_restaurante.Location = new System.Drawing.Point(68, 263);
+            this.label_hora_final_restaurante.Name = "label_hora_final_restaurante";
+            this.label_hora_final_restaurante.Size = new System.Drawing.Size(108, 22);
+            this.label_hora_final_restaurante.TabIndex = 44;
+            this.label_hora_final_restaurante.Text = "Hora Final:";
+            // 
+            // label_hora_inicio_restaurante
+            // 
+            this.label_hora_inicio_restaurante.AutoSize = true;
+            this.label_hora_inicio_restaurante.BackColor = System.Drawing.Color.Gold;
+            this.label_hora_inicio_restaurante.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_hora_inicio_restaurante.Location = new System.Drawing.Point(63, 223);
+            this.label_hora_inicio_restaurante.Name = "label_hora_inicio_restaurante";
+            this.label_hora_inicio_restaurante.Size = new System.Drawing.Size(114, 22);
+            this.label_hora_inicio_restaurante.TabIndex = 43;
+            this.label_hora_inicio_restaurante.Text = "Hora Inicio:";
+            // 
+            // label_id_restaurante
+            // 
+            this.label_id_restaurante.AutoSize = true;
+            this.label_id_restaurante.BackColor = System.Drawing.Color.Gold;
+            this.label_id_restaurante.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_id_restaurante.Location = new System.Drawing.Point(141, 188);
+            this.label_id_restaurante.Name = "label_id_restaurante";
+            this.label_id_restaurante.Size = new System.Drawing.Size(34, 22);
+            this.label_id_restaurante.TabIndex = 42;
+            this.label_id_restaurante.Text = "Id:";
+            // 
+            // label_boss_restaurante
+            // 
+            this.label_boss_restaurante.AutoSize = true;
+            this.label_boss_restaurante.BackColor = System.Drawing.Color.Gold;
+            this.label_boss_restaurante.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_boss_restaurante.Location = new System.Drawing.Point(102, 152);
+            this.label_boss_restaurante.Name = "label_boss_restaurante";
+            this.label_boss_restaurante.Size = new System.Drawing.Size(74, 22);
+            this.label_boss_restaurante.TabIndex = 41;
+            this.label_boss_restaurante.Text = "Dueño:";
+            // 
+            // button_atras_restaurante
+            // 
+            this.button_atras_restaurante.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_atras_restaurante.Location = new System.Drawing.Point(216, 372);
+            this.button_atras_restaurante.Name = "button_atras_restaurante";
+            this.button_atras_restaurante.Size = new System.Drawing.Size(152, 42);
+            this.button_atras_restaurante.TabIndex = 40;
+            this.button_atras_restaurante.Text = "Atras";
+            this.button_atras_restaurante.UseVisualStyleBackColor = true;
+            // 
+            // textBox_nombre_restaurante
+            // 
+            this.textBox_nombre_restaurante.Location = new System.Drawing.Point(208, 111);
+            this.textBox_nombre_restaurante.Name = "textBox_nombre_restaurante";
+            this.textBox_nombre_restaurante.Size = new System.Drawing.Size(387, 22);
+            this.textBox_nombre_restaurante.TabIndex = 39;
+            // 
+            // label_nombre_restaurant
+            // 
+            this.label_nombre_restaurant.AutoSize = true;
+            this.label_nombre_restaurant.BackColor = System.Drawing.Color.Gold;
+            this.label_nombre_restaurant.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_nombre_restaurant.Location = new System.Drawing.Point(86, 110);
+            this.label_nombre_restaurant.Name = "label_nombre_restaurant";
+            this.label_nombre_restaurant.Size = new System.Drawing.Size(89, 22);
+            this.label_nombre_restaurant.TabIndex = 33;
+            this.label_nombre_restaurant.Text = "Nombre:";
+            // 
+            // label_registrar_restaurant
+            // 
+            this.label_registrar_restaurant.AutoSize = true;
+            this.label_registrar_restaurant.BackColor = System.Drawing.Color.Gold;
+            this.label_registrar_restaurant.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_registrar_restaurant.Location = new System.Drawing.Point(49, 42);
+            this.label_registrar_restaurant.Name = "label_registrar_restaurant";
+            this.label_registrar_restaurant.Size = new System.Drawing.Size(297, 28);
+            this.label_registrar_restaurant.TabIndex = 16;
+            this.label_registrar_restaurant.Text = "Registrar un restaurante";
             // 
             // textBox_salas_cine
             // 
@@ -645,318 +958,6 @@
             this.label_info_general_local.Size = new System.Drawing.Size(234, 28);
             this.label_info_general_local.TabIndex = 13;
             this.label_info_general_local.Text = "Informacion Local: ";
-            // 
-            // panel_agregar_Restaurante
-            // 
-            this.panel_agregar_Restaurante.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_agregar_Restaurante.BackgroundImage")));
-            this.panel_agregar_Restaurante.Controls.Add(this.panel_agregar_recreativa);
-            this.panel_agregar_Restaurante.Controls.Add(this.button_add_restaurante);
-            this.panel_agregar_Restaurante.Controls.Add(this.checkBox_mesas_privadas_restaurante);
-            this.panel_agregar_Restaurante.Controls.Add(this.textBox_hora_final_restaurante);
-            this.panel_agregar_Restaurante.Controls.Add(this.textBox_hora_inicio_restaurante);
-            this.panel_agregar_Restaurante.Controls.Add(this.textBox_id_restaurante);
-            this.panel_agregar_Restaurante.Controls.Add(this.textBox_boss_restaurante);
-            this.panel_agregar_Restaurante.Controls.Add(this.label8);
-            this.panel_agregar_Restaurante.Controls.Add(this.label_hora_final_restaurante);
-            this.panel_agregar_Restaurante.Controls.Add(this.label_hora_inicio_restaurante);
-            this.panel_agregar_Restaurante.Controls.Add(this.label_id_restaurante);
-            this.panel_agregar_Restaurante.Controls.Add(this.label_boss_restaurante);
-            this.panel_agregar_Restaurante.Controls.Add(this.button_atras_restaurante);
-            this.panel_agregar_Restaurante.Controls.Add(this.textBox_nombre_restaurante);
-            this.panel_agregar_Restaurante.Controls.Add(this.label_nombre_restaurant);
-            this.panel_agregar_Restaurante.Controls.Add(this.label_registrar_restaurant);
-            this.panel_agregar_Restaurante.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_agregar_Restaurante.Location = new System.Drawing.Point(0, 0);
-            this.panel_agregar_Restaurante.Name = "panel_agregar_Restaurante";
-            this.panel_agregar_Restaurante.Size = new System.Drawing.Size(800, 360);
-            this.panel_agregar_Restaurante.TabIndex = 44;
-            // 
-            // label_registrar_restaurant
-            // 
-            this.label_registrar_restaurant.AutoSize = true;
-            this.label_registrar_restaurant.BackColor = System.Drawing.Color.Gold;
-            this.label_registrar_restaurant.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_registrar_restaurant.Location = new System.Drawing.Point(49, 42);
-            this.label_registrar_restaurant.Name = "label_registrar_restaurant";
-            this.label_registrar_restaurant.Size = new System.Drawing.Size(297, 28);
-            this.label_registrar_restaurant.TabIndex = 16;
-            this.label_registrar_restaurant.Text = "Registrar un restaurante";
-            // 
-            // label_nombre_restaurant
-            // 
-            this.label_nombre_restaurant.AutoSize = true;
-            this.label_nombre_restaurant.BackColor = System.Drawing.Color.Gold;
-            this.label_nombre_restaurant.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_nombre_restaurant.Location = new System.Drawing.Point(86, 110);
-            this.label_nombre_restaurant.Name = "label_nombre_restaurant";
-            this.label_nombre_restaurant.Size = new System.Drawing.Size(89, 22);
-            this.label_nombre_restaurant.TabIndex = 33;
-            this.label_nombre_restaurant.Text = "Nombre:";
-            // 
-            // textBox_nombre_restaurante
-            // 
-            this.textBox_nombre_restaurante.Location = new System.Drawing.Point(208, 111);
-            this.textBox_nombre_restaurante.Name = "textBox_nombre_restaurante";
-            this.textBox_nombre_restaurante.Size = new System.Drawing.Size(387, 22);
-            this.textBox_nombre_restaurante.TabIndex = 39;
-            // 
-            // button_atras_restaurante
-            // 
-            this.button_atras_restaurante.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_atras_restaurante.Location = new System.Drawing.Point(216, 372);
-            this.button_atras_restaurante.Name = "button_atras_restaurante";
-            this.button_atras_restaurante.Size = new System.Drawing.Size(152, 42);
-            this.button_atras_restaurante.TabIndex = 40;
-            this.button_atras_restaurante.Text = "Atras";
-            this.button_atras_restaurante.UseVisualStyleBackColor = true;
-            // 
-            // label_boss_restaurante
-            // 
-            this.label_boss_restaurante.AutoSize = true;
-            this.label_boss_restaurante.BackColor = System.Drawing.Color.Gold;
-            this.label_boss_restaurante.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_boss_restaurante.Location = new System.Drawing.Point(102, 152);
-            this.label_boss_restaurante.Name = "label_boss_restaurante";
-            this.label_boss_restaurante.Size = new System.Drawing.Size(74, 22);
-            this.label_boss_restaurante.TabIndex = 41;
-            this.label_boss_restaurante.Text = "Dueño:";
-            // 
-            // label_id_restaurante
-            // 
-            this.label_id_restaurante.AutoSize = true;
-            this.label_id_restaurante.BackColor = System.Drawing.Color.Gold;
-            this.label_id_restaurante.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_id_restaurante.Location = new System.Drawing.Point(141, 188);
-            this.label_id_restaurante.Name = "label_id_restaurante";
-            this.label_id_restaurante.Size = new System.Drawing.Size(34, 22);
-            this.label_id_restaurante.TabIndex = 42;
-            this.label_id_restaurante.Text = "Id:";
-            // 
-            // label_hora_inicio_restaurante
-            // 
-            this.label_hora_inicio_restaurante.AutoSize = true;
-            this.label_hora_inicio_restaurante.BackColor = System.Drawing.Color.Gold;
-            this.label_hora_inicio_restaurante.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_hora_inicio_restaurante.Location = new System.Drawing.Point(63, 223);
-            this.label_hora_inicio_restaurante.Name = "label_hora_inicio_restaurante";
-            this.label_hora_inicio_restaurante.Size = new System.Drawing.Size(114, 22);
-            this.label_hora_inicio_restaurante.TabIndex = 43;
-            this.label_hora_inicio_restaurante.Text = "Hora Inicio:";
-            // 
-            // label_hora_final_restaurante
-            // 
-            this.label_hora_final_restaurante.AutoSize = true;
-            this.label_hora_final_restaurante.BackColor = System.Drawing.Color.Gold;
-            this.label_hora_final_restaurante.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_hora_final_restaurante.Location = new System.Drawing.Point(68, 263);
-            this.label_hora_final_restaurante.Name = "label_hora_final_restaurante";
-            this.label_hora_final_restaurante.Size = new System.Drawing.Size(108, 22);
-            this.label_hora_final_restaurante.TabIndex = 44;
-            this.label_hora_final_restaurante.Text = "Hora Final:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Gold;
-            this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(3, 301);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(175, 22);
-            this.label8.TabIndex = 45;
-            this.label8.Text = "Mesas Exclusivas:";
-            // 
-            // textBox_boss_restaurante
-            // 
-            this.textBox_boss_restaurante.Location = new System.Drawing.Point(208, 153);
-            this.textBox_boss_restaurante.Name = "textBox_boss_restaurante";
-            this.textBox_boss_restaurante.Size = new System.Drawing.Size(387, 22);
-            this.textBox_boss_restaurante.TabIndex = 46;
-            // 
-            // textBox_id_restaurante
-            // 
-            this.textBox_id_restaurante.Location = new System.Drawing.Point(208, 188);
-            this.textBox_id_restaurante.Name = "textBox_id_restaurante";
-            this.textBox_id_restaurante.Size = new System.Drawing.Size(387, 22);
-            this.textBox_id_restaurante.TabIndex = 47;
-            // 
-            // textBox_hora_inicio_restaurante
-            // 
-            this.textBox_hora_inicio_restaurante.Location = new System.Drawing.Point(208, 224);
-            this.textBox_hora_inicio_restaurante.Name = "textBox_hora_inicio_restaurante";
-            this.textBox_hora_inicio_restaurante.Size = new System.Drawing.Size(387, 22);
-            this.textBox_hora_inicio_restaurante.TabIndex = 48;
-            // 
-            // textBox_hora_final_restaurante
-            // 
-            this.textBox_hora_final_restaurante.Location = new System.Drawing.Point(208, 259);
-            this.textBox_hora_final_restaurante.Name = "textBox_hora_final_restaurante";
-            this.textBox_hora_final_restaurante.Size = new System.Drawing.Size(387, 22);
-            this.textBox_hora_final_restaurante.TabIndex = 49;
-            // 
-            // checkBox_mesas_privadas_restaurante
-            // 
-            this.checkBox_mesas_privadas_restaurante.AutoSize = true;
-            this.checkBox_mesas_privadas_restaurante.BackColor = System.Drawing.Color.Gold;
-            this.checkBox_mesas_privadas_restaurante.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_mesas_privadas_restaurante.Location = new System.Drawing.Point(208, 301);
-            this.checkBox_mesas_privadas_restaurante.Name = "checkBox_mesas_privadas_restaurante";
-            this.checkBox_mesas_privadas_restaurante.Size = new System.Drawing.Size(546, 21);
-            this.checkBox_mesas_privadas_restaurante.TabIndex = 50;
-            this.checkBox_mesas_privadas_restaurante.Text = "Marque esta opcion si este restaurante requiere reservacion de mesas";
-            this.checkBox_mesas_privadas_restaurante.UseVisualStyleBackColor = false;
-            // 
-            // button_add_restaurante
-            // 
-            this.button_add_restaurante.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_add_restaurante.Location = new System.Drawing.Point(457, 372);
-            this.button_add_restaurante.Name = "button_add_restaurante";
-            this.button_add_restaurante.Size = new System.Drawing.Size(152, 42);
-            this.button_add_restaurante.TabIndex = 51;
-            this.button_add_restaurante.Text = "Agregar";
-            this.button_add_restaurante.UseVisualStyleBackColor = true;
-            // 
-            // panel_agregar_recreativa
-            // 
-            this.panel_agregar_recreativa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_agregar_recreativa.BackgroundImage")));
-            this.panel_agregar_recreativa.Controls.Add(this.button_agregar_recreativa);
-            this.panel_agregar_recreativa.Controls.Add(this.textBox_hora_final_recreativa);
-            this.panel_agregar_recreativa.Controls.Add(this.textBox_hora_inicio_recreativa);
-            this.panel_agregar_recreativa.Controls.Add(this.textBox_id_recreativa);
-            this.panel_agregar_recreativa.Controls.Add(this.textBox_boss_recreativa);
-            this.panel_agregar_recreativa.Controls.Add(this.label_hora_final_recreativa);
-            this.panel_agregar_recreativa.Controls.Add(this.label_hora_inicio_recreativa);
-            this.panel_agregar_recreativa.Controls.Add(this.label_id_recreativa);
-            this.panel_agregar_recreativa.Controls.Add(this.label_boss_recreativa);
-            this.panel_agregar_recreativa.Controls.Add(this.button_atras_recreativa);
-            this.panel_agregar_recreativa.Controls.Add(this.textBox_nombre_recreativa);
-            this.panel_agregar_recreativa.Controls.Add(this.label_nombre_recreativa);
-            this.panel_agregar_recreativa.Controls.Add(this.label_titulo_recreativa);
-            this.panel_agregar_recreativa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_agregar_recreativa.Location = new System.Drawing.Point(0, 0);
-            this.panel_agregar_recreativa.Name = "panel_agregar_recreativa";
-            this.panel_agregar_recreativa.Size = new System.Drawing.Size(800, 360);
-            this.panel_agregar_recreativa.TabIndex = 52;
-            // 
-            // label_titulo_recreativa
-            // 
-            this.label_titulo_recreativa.AutoSize = true;
-            this.label_titulo_recreativa.BackColor = System.Drawing.Color.Gold;
-            this.label_titulo_recreativa.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_titulo_recreativa.Location = new System.Drawing.Point(51, 42);
-            this.label_titulo_recreativa.Name = "label_titulo_recreativa";
-            this.label_titulo_recreativa.Size = new System.Drawing.Size(304, 28);
-            this.label_titulo_recreativa.TabIndex = 17;
-            this.label_titulo_recreativa.Text = "Registrar una recreativa:";
-            // 
-            // label_nombre_recreativa
-            // 
-            this.label_nombre_recreativa.AutoSize = true;
-            this.label_nombre_recreativa.BackColor = System.Drawing.Color.Gold;
-            this.label_nombre_recreativa.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_nombre_recreativa.Location = new System.Drawing.Point(89, 99);
-            this.label_nombre_recreativa.Name = "label_nombre_recreativa";
-            this.label_nombre_recreativa.Size = new System.Drawing.Size(89, 22);
-            this.label_nombre_recreativa.TabIndex = 34;
-            this.label_nombre_recreativa.Text = "Nombre:";
-            // 
-            // textBox_nombre_recreativa
-            // 
-            this.textBox_nombre_recreativa.Location = new System.Drawing.Point(228, 100);
-            this.textBox_nombre_recreativa.Name = "textBox_nombre_recreativa";
-            this.textBox_nombre_recreativa.Size = new System.Drawing.Size(387, 22);
-            this.textBox_nombre_recreativa.TabIndex = 40;
-            // 
-            // button_atras_recreativa
-            // 
-            this.button_atras_recreativa.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_atras_recreativa.Location = new System.Drawing.Point(187, 372);
-            this.button_atras_recreativa.Name = "button_atras_recreativa";
-            this.button_atras_recreativa.Size = new System.Drawing.Size(152, 42);
-            this.button_atras_recreativa.TabIndex = 41;
-            this.button_atras_recreativa.Text = "Atras";
-            this.button_atras_recreativa.UseVisualStyleBackColor = true;
-            // 
-            // label_boss_recreativa
-            // 
-            this.label_boss_recreativa.AutoSize = true;
-            this.label_boss_recreativa.BackColor = System.Drawing.Color.Gold;
-            this.label_boss_recreativa.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_boss_recreativa.Location = new System.Drawing.Point(104, 144);
-            this.label_boss_recreativa.Name = "label_boss_recreativa";
-            this.label_boss_recreativa.Size = new System.Drawing.Size(74, 22);
-            this.label_boss_recreativa.TabIndex = 42;
-            this.label_boss_recreativa.Text = "Dueño:";
-            // 
-            // label_id_recreativa
-            // 
-            this.label_id_recreativa.AutoSize = true;
-            this.label_id_recreativa.BackColor = System.Drawing.Color.Gold;
-            this.label_id_recreativa.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_id_recreativa.Location = new System.Drawing.Point(144, 188);
-            this.label_id_recreativa.Name = "label_id_recreativa";
-            this.label_id_recreativa.Size = new System.Drawing.Size(34, 22);
-            this.label_id_recreativa.TabIndex = 43;
-            this.label_id_recreativa.Text = "Id:";
-            // 
-            // label_hora_inicio_recreativa
-            // 
-            this.label_hora_inicio_recreativa.AutoSize = true;
-            this.label_hora_inicio_recreativa.BackColor = System.Drawing.Color.Gold;
-            this.label_hora_inicio_recreativa.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_hora_inicio_recreativa.Location = new System.Drawing.Point(64, 241);
-            this.label_hora_inicio_recreativa.Name = "label_hora_inicio_recreativa";
-            this.label_hora_inicio_recreativa.Size = new System.Drawing.Size(114, 22);
-            this.label_hora_inicio_recreativa.TabIndex = 44;
-            this.label_hora_inicio_recreativa.Text = "Hora Inicio:";
-            // 
-            // label_hora_final_recreativa
-            // 
-            this.label_hora_final_recreativa.AutoSize = true;
-            this.label_hora_final_recreativa.BackColor = System.Drawing.Color.Gold;
-            this.label_hora_final_recreativa.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_hora_final_recreativa.Location = new System.Drawing.Point(70, 290);
-            this.label_hora_final_recreativa.Name = "label_hora_final_recreativa";
-            this.label_hora_final_recreativa.Size = new System.Drawing.Size(108, 22);
-            this.label_hora_final_recreativa.TabIndex = 45;
-            this.label_hora_final_recreativa.Text = "Hora Final:";
-            // 
-            // textBox_boss_recreativa
-            // 
-            this.textBox_boss_recreativa.Location = new System.Drawing.Point(228, 144);
-            this.textBox_boss_recreativa.Name = "textBox_boss_recreativa";
-            this.textBox_boss_recreativa.Size = new System.Drawing.Size(387, 22);
-            this.textBox_boss_recreativa.TabIndex = 46;
-            // 
-            // textBox_id_recreativa
-            // 
-            this.textBox_id_recreativa.Location = new System.Drawing.Point(228, 189);
-            this.textBox_id_recreativa.Name = "textBox_id_recreativa";
-            this.textBox_id_recreativa.Size = new System.Drawing.Size(387, 22);
-            this.textBox_id_recreativa.TabIndex = 47;
-            // 
-            // textBox_hora_inicio_recreativa
-            // 
-            this.textBox_hora_inicio_recreativa.Location = new System.Drawing.Point(228, 238);
-            this.textBox_hora_inicio_recreativa.Name = "textBox_hora_inicio_recreativa";
-            this.textBox_hora_inicio_recreativa.Size = new System.Drawing.Size(387, 22);
-            this.textBox_hora_inicio_recreativa.TabIndex = 48;
-            // 
-            // textBox_hora_final_recreativa
-            // 
-            this.textBox_hora_final_recreativa.Location = new System.Drawing.Point(228, 287);
-            this.textBox_hora_final_recreativa.Name = "textBox_hora_final_recreativa";
-            this.textBox_hora_final_recreativa.Size = new System.Drawing.Size(387, 22);
-            this.textBox_hora_final_recreativa.TabIndex = 49;
-            // 
-            // button_agregar_recreativa
-            // 
-            this.button_agregar_recreativa.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_agregar_recreativa.Location = new System.Drawing.Point(416, 372);
-            this.button_agregar_recreativa.Name = "button_agregar_recreativa";
-            this.button_agregar_recreativa.Size = new System.Drawing.Size(152, 42);
-            this.button_agregar_recreativa.TabIndex = 50;
-            this.button_agregar_recreativa.Text = "Agregar";
-            this.button_agregar_recreativa.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 

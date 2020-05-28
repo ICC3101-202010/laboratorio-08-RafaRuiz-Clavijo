@@ -1,4 +1,5 @@
 ﻿using Empresa.Clases;
+using Empresa.Eventos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,13 @@ namespace Empresa.Controladores
 
         public ControladorRestaurante(Form appform)
         {
+            this.appform = appform as Form1;
+            this.appform.AddRestaurante += OnAddRestaurante;
+        }
 
+        public void OnAddRestaurante(object sender, AddLocalEventArgs e)
+        {
+            restaurantes.Add(new Restaurante(e.mesas, e.boss, e.id, e.hora_inicio, e.hora_final, e.name));
         }
     }
 }

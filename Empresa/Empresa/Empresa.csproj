@@ -55,6 +55,7 @@
     <Compile Include="Controladores\ControladorTienda.cs" />
     <Compile Include="Controladores\ControladorCine.cs" />
     <Compile Include="Controladores\ControladorRestaurante.cs" />
+    <Compile Include="Eventos\AddLocalEventArgs.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,8 +95,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Eventos\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

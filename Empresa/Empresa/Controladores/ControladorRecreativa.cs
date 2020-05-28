@@ -1,4 +1,5 @@
 ﻿using Empresa.Clases;
+using Empresa.Eventos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,13 @@ namespace Empresa.Controladores
 
         public ControladorRecreativa(Form appform)
         {
+            this.appform = appform as Form1;
+            this.appform.AddRecreativa += OnAddRecreativa;
+        }
 
+        public void OnAddRecreativa(object sender, AddLocalEventArgs e)
+        {
+            recreativa.Add(new Recreativa(e.boss, e.id, e.hora_inicio, e.hora_final, e.name));
         }
     }
 }
