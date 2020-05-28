@@ -16,5 +16,25 @@ namespace Empresa
         {
             InitializeComponent();
         }
+
+        private void label_add_cine_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_add_tienda_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_agregar_local_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_recreativa_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
