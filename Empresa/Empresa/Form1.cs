@@ -1,4 +1,5 @@
-﻿using Empresa.Eventos;
+﻿using Empresa.Clases;
+using Empresa.Eventos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -356,6 +357,18 @@ namespace Empresa
             {
                 panel_info_local.Controls.Add(Add_Label("Salas Disponibles: " + salas, pos_x, pos_y + 150));
             }
+        }
+
+        private void label_ver_todo_wandes_mall_Click(object sender, EventArgs e)
+        {
+            List<string> titulos = new List<string>();
+            foreach(Label data in locales)
+            {
+                titulos.Add(data.Text);
+            }
+            Form2 form2 = new Form2(titulos);
+            form2.Visible = true;
+            form2.Show();
         }
     }
 }
