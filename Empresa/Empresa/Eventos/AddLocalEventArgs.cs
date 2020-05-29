@@ -16,5 +16,6 @@ namespace Empresa.Eventos
         public bool mesas { get; set; }
         public int salas { get; set; }
         public List<string> categorias { get; set; }
+        public List<string> info_get { get; set; }
     }
 }
